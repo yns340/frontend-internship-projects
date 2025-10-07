@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List of Book</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="bigBox">
+            <h1>Add Book </h1> 
+
+            <div class="info">
+                <!--şuanlık boş-->
+            </div>
+
+            <p>Add Books to your personal library!</p>
+
+            <form class="form" action="">
+                <div class="formRow">
+                    <label class="label" for="bookName">Name</label> 
+                    <input name="bookName" type="text" placeholder="write here..." autocomplete="off" required minlength="1"> 
+                </div>
+
+                <div class="formRow">
+                    <label class="label" for="authorName">Author</label> 
+                    <input name="authorName" type="text" placeholder="write here..." autocomplete="off" required minlength="1">  
+                </div>          
+                
+                <div class="formRow">
+                    <label class="label" for="isbn">ISBN#</label> 
+                    <input name="isbn" type="text" placeholder="write here.." autocomplete="off" required minlength="1"> 
+                </div>
+
+                <input class="submitButton" type="submit" value="SUBMIT">
+            </form> 
+
+            <div class="table">
+                <div class="tableRows">
+                    <div class="tableHeader">Title</div>
+                    <div class="tableHeader">Author</div>
+                    <div class="tableHeader">ISBN</div>
+                    <div class="tableColumns"></div>
+                </div>
+ 
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

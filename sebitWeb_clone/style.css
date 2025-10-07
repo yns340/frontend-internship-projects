@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom: 2px solid rgb(131, 184, 236);
+}
+
+.navbar img:hover{
+    cursor:pointer;
+
+}
+
+.items{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+.items div{
+    height: 100%;
+    display: flex;
+    background-color: white;
+    font-family: "TASA Orbiter", sans-serif;
+    font-weight: 450;
+    text-align: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.items div:first-child, .items div:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid rgb(80, 154, 227);
+    cursor:pointer;
+}
+
+.items img{
+    transform: scale(0.3); 
+    transform-origin: center center; /*her iki eksen de*/
+    cursor:pointer;
+}
+
+.mainBody{
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+}
+
+.mainBody > div:nth-child(1) {
+    width: 100%;
+    height:50vh;
+    display: flex;
+}
+
+.mainBody > div:nth-child(1) img{
+    width: 100%; 
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.mainBody > div:nth-child(1) svg{
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.mainBody > div:nth-child(1) svg:nth-child(2){
+    align-self: center;
+    left:40px;
+    transform: scale(2.5) rotateZ(180deg);
+}
+
+.mainBody > div:nth-child(1) svg:nth-child(3){
+    align-self: center;
+    right:40px;
+    transform: scale(2.5);
+}
+
+.mainBody > div:nth-child(2){
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    color:rgb(80, 154, 227);
+    font-family: "TASA Orbiter", sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30vw;
+    text-align: center;
+}
+
+.mainBody > div:nth-child(3){
+    width: 100%;
+    height:50vh;
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mainBody > div:nth-child(3) div{
+    width: 27vh;
+    height:calc(100% - 30px);
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "TASA Orbiter", sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: 300;
+    background-color: rgb(234, 234, 234);
+    align-items: center;
+    text-align: center;
+}
+
+.mainBody > div:nth-child(3) div img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain; 
+    display: block;
+}
+
+.mainBody > div:nth-child(4){
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    color:rgb(80, 154, 227);
+    font-family: "TASA Orbiter", sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30vw;
+    text-align: center;
+}
+
+.mainBody > div:nth-child(5){
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 200px;
+    font-family: "TASA Orbiter", sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.news{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap:40px;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.mainBody > div:nth-child(6){
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 200px;
+    font-family: "TASA Orbiter", sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.mainBody > div:nth-child(6) span{
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;   /* Yatay hizalama */
+    align-items: center;       /* Dikey hizalama */
+    gap: 5px;
+}
+
+.mainBody > div:nth-child(6) span:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.awards{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    gap:40px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.awardContents{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 4fr 1fr 1fr;
+    font-size: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.awardContents img, .content img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    align-self: end;
+    overflow: hidden;
+}
+
+.awardContents span{
+    font-size:20px;
+    font-weight: 500;
+    align-self: center;
+}
+
+.footer{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgb(86, 86, 86);
+    color: white;
+    font-family: "TASA Orbiter", sans-serif;
+    font-size: 15px;
+    font-weight: 50;
+}
+
+.footer > div:nth-child(1){
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer > div:nth-child(1) img{
+    height: 60px;
+    width: auto;
+    padding: 0;
+    filter: brightness(0) invert(1);
+}
+
+.footer > div:nth-child(1) div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer > div:nth-child(2){
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    justify-content: center; /* Dikeyde ortala */
+    gap: 8px;
+    cursor: pointer;
+}
+
+.footer > div:nth-child(3){
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > div:nth-child(3) div:first-child{
+    color:gray
+}
