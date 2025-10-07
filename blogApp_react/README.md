@@ -1,12 +1,28 @@
-# React + Vite
+# React Blog Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **Blog Application** built with React. It was created to learn and practice modern web development techniques, with a particular focus on **react-router** for multi-page navigation and dynamic URL handling.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React Router Integration**: Enables multi-page design from a single page. Both static and dynamic URL structures are used to navigate between pages.
+- **Dynamic and Static Pages**: Dynamic pages are created for blog posts, allowing users to access each post via a unique URL.
+- **Educational and Enjoyable**: Since this structure is widely used in modern web applications, it provided a practical and enjoyable learning experience.
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Browse all blog posts from the homepage.
+- Click on posts to navigate to individual post pages.
+- Each post has its own unique URL, thanks to dynamic routing.
+
+## Technologies
+
+- React
+- React Router DOM
+- JavaScript (ES6+)
+- CSS / TailwindCSS (optional)
+
+## Screenshots
+
+<img width="376" height="212" alt="image" src="https://github.com/user-attachments/assets/beaa4966-ff04-4f8d-8cb6-c5a9fcabef28" />
+<img width="380" height="214" alt="image" src="https://github.com/user-attachments/assets/cb9734b3-e15e-467e-8bb6-ff1a8cd46dda" />
+
