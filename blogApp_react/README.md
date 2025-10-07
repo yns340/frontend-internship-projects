@@ -23,6 +23,6 @@ This project is a **Blog Application** built with React. It was created to learn
 
 ## Screenshots
 
-<img width="376" height="212" alt="image" src="https://github.com/user-attachments/assets/beaa4966-ff04-4f8d-8cb6-c5a9fcabef28" />
-<img width="380" height="214" alt="image" src="https://github.com/user-attachments/assets/cb9734b3-e15e-467e-8bb6-ff1a8cd46dda" />
+<img src="https://github.com/user-attachments/assets/beaa4966-ff04-4f8d-8cb6-c5a9fcabef28" width="100%" />
 
+<img src="https://github.com/user-attachments/assets/cb9734b3-e15e-467e-8bb6-ff1a8cd46dda" width="100%" />
