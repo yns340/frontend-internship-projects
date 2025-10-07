@@ -17,7 +17,7 @@ This repository contains the **frontend projects developed during the Sebit inte
 3. **React Blog Application**
    - **Purpose**: Learn React and React Router for multi-page navigation and dynamic content.  
    - **Main Technologies**: React, React Router, JavaScript, CSS  
-   - **More Details**: See [Blog Application README](./bloagApp_react/README.md)
+   - **More Details**: See [Blog Application README](./blogApp_react/README.md)
 
 4. **React ToDo List Application**
    - **Purpose**: Learn React component-based architecture, JSX, and CSS modules; build a reusable and dynamic ToDo app.  
